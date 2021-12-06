@@ -3,7 +3,7 @@ lanternfish = list(map(int, open("test_input.txt", "r").readline().strip().split
 by_day = [lanternfish.count(i) for i in range(9)]
 
 for i in range(80):
-    # by popping from the front we "substract" one day from each element from the rest of the list
+    # by popping from the front we move each element by one day (subscract one day)
     fish_num = by_day.pop(0)
     
     # add old fish to start at day 6 again
