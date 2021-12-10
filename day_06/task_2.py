@@ -1,4 +1,4 @@
-lanternfish = list(map(int, open("test_input.txt", "r").readline().strip().split(",")))
+lanternfish = list(map(int, open("input.txt", "r").readline().strip().split(",")))
 # index describes day - with 9 possible days - 0,1,2,3,4,5,6,7,8 
 by_day = [lanternfish.count(i) for i in range(9)]
 
